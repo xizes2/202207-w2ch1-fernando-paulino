@@ -2,6 +2,15 @@
 
 body {
   background-color: variables.$color-pale-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: variables.$width-desktop) {
+    background-image: url(../order-summary/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .order-summary-main-container {
@@ -10,13 +19,12 @@ body {
   flex-direction: column;
   width: variables.$width-mobile;
   align-items: center;
-  margin: 50% auto;
   border-radius: 30px;
   background-color: variables.$color-very-pale-blue;
   font-family: "Red Hat Display", sans-serif;
 
   .order-summary-main-container__svg-container {
-    height: 200px;
+    height: 210px;
     background-image: url("../order-summary/images/illustration-hero.svg");
     background-repeat: no-repeat;
     width: 100%;
@@ -29,68 +37,87 @@ body {
     justify-content: center;
     padding: 10px;
     align-items: center;
-  }
 
-  .order-summary-main-container__title {
-    color: variables.$color-dark-blue;
-    font-size: 22px;
-    font-weight: 900;
-    width: 100%;
-    text-align: center;
-  }
+    .order-summary-main-container__title {
+      color: variables.$color-dark-blue;
+      font-size: 22px;
+      font-weight: 900;
+      width: 100%;
+      text-align: center;
+    }
 
-  .order-summary-main-container__annual-plan {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: variables.$color-very-pale-blue;
-    margin-bottom: 35px;
-    align-items: center;
+    p {
+      text-align: center;
+      color: variables.$color-desaturated-blue;
+      font-size: variables.$font-size-paragraph;
+      line-height: 1.8;
+      margin: 0 0 30px 0;
+    }
 
-    .svg-container {
+    .order-summary-main-container__annual-plan {
       display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: variables.$color-very-pale-blue;
+      margin-bottom: 35px;
       align-items: center;
-      padding: 10px;
-    }
 
-    .order-summary-main-container__price {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-
-      h2 {
-        font-size: 16px;
-        margin: 0;
-        padding-bottom: 5px;
+      .svg-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
       }
 
-      span {
-        font-size: 15px;
-        color: variables.$color-desaturated-blue;
+      .order-summary-main-container__price {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        h2 {
+          font-size: 16px;
+          margin: 0;
+          padding-bottom: 5px;
+        }
+
+        span {
+          font-size: 15px;
+          color: variables.$color-desaturated-blue;
+        }
       }
     }
-  }
 
-  .payment-button {
-    height: 50px;
-    border-radius: 10px;
-    background-color: variables.$color-bright-blue;
-    color: variables.$color-very-pale-blue;
-    border: 0;
-    font-family: "Red Hat Doisplay";
-    font-size: variables.$font-size-paragraph;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding: 0 80px;
-    box-shadow: 0 15px 10px variables.$color-pale-blue;
-  }
+    .payment-button {
+      height: 50px;
+      border-radius: 10px;
+      background-color: variables.$color-bright-blue;
+      color: variables.$color-very-pale-blue;
+      border: 0;
+      font-family: "Red Hat Doisplay";
+      font-size: variables.$font-size-paragraph;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding: 0 80px;
+      box-shadow: 0 15px 10px variables.$color-pale-blue;
+    }
 
-  p {
-    text-align: center;
-    color: variables.$color-desaturated-blue;
-    font-size: variables.$font-size-paragraph;
-    line-height: 1.8;
-    margin: 10px 0;
+    .cancel-order {
+      color: variables.$color-desaturated-blue;
+      text-decoration: none;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
   }
+}
+
+.back-to-index {
+  border-radius: 10px;
+  background-color: variables.$color-dark-blue;
+  color: variables.$color-very-pale-blue;
+  border: 0;
+  font-size: variables.$font-size-paragraph;
+  font-weight: 700;
+  padding: 20px;
+  margin: 30px;
+  text-decoration: none;
 }
