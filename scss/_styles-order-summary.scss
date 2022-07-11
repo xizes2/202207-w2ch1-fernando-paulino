@@ -86,6 +86,11 @@ body {
           color: variables.$color-desaturated-blue;
         }
       }
+
+      .change-link:hover {
+        text-decoration: none;
+        color: variables.$color-desaturated-blue;
+      }
     }
 
     .payment-button {
@@ -102,11 +107,19 @@ body {
       box-shadow: 0 15px 10px variables.$color-pale-blue;
     }
 
+    .payment-button:hover {
+      background-color: variables.$color-desaturated-blue;
+    }
+
     .cancel-order {
       color: variables.$color-desaturated-blue;
       text-decoration: none;
       font-weight: 700;
       margin-bottom: 20px;
+    }
+
+    .cancel-order:hover {
+      color: variables.$color-dark-blue;
     }
   }
 }
