@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    align-items: center;
   }
 
   .order-summary-main-container__title {
@@ -69,6 +70,20 @@ body {
         color: variables.$color-desaturated-blue;
       }
     }
+  }
+
+  .payment-button {
+    height: 50px;
+    border-radius: 10px;
+    background-color: variables.$color-bright-blue;
+    color: variables.$color-very-pale-blue;
+    border: 0;
+    font-family: "Red Hat Doisplay";
+    font-size: variables.$font-size-paragraph;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding: 0 80px;
+    box-shadow: 0 15px 10px variables.$color-pale-blue;
   }
 
   p {
