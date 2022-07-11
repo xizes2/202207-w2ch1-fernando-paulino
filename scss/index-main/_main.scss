@@ -1,16 +1,25 @@
 body {
   margin: 0;
   height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Poppins;
 }
 
 .main-container {
-  background-color: rgb(104, 182, 255);
+  background-color: rgb(104, 195, 255);
   height: 100%;
 }
 
-h1 {
+.main-container__title {
   margin: 0;
   padding: 20px;
   color: white;
+}
+
+.main-container__cards-list li {
+  list-style: none;
+}
+
+.main-container__cards-list a {
+  text-decoration: none;
+  color: black;
 }

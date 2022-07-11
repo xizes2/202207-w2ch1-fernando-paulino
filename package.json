@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "npx sass scss/styles.scss styles/styles.css --watch",
-    "production-sass": "npx sass scss/styles.scss styles/styles.css"
+    "watch-sass": "npx sass scss/_styles.scss styles/styles.css --watch",
+    "production-sass": "npx sass scss/_styles.scss styles/styles.css"
   },
   "keywords": [],
   "author": "",
