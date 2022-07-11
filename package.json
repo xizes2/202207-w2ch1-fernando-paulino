@@ -1,0 +1,17 @@
+{
+  "name": "week-2---challenge-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "npx sass scss/styles.scss styles/styles.css --watch",
+    "production-sass": "npx sass scss/styles.scss styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "sass": "^1.53.0"
+  }
+}
