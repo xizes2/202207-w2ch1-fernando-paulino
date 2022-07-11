@@ -10,6 +10,7 @@ body {
   @media (min-width: variables.$width-desktop) {
     background-image: url(../order-summary/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
